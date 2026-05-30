@@ -1,6 +1,7 @@
 // App.js - FIXED VERSION with Working Sources Dropdown
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+axios.defaults.baseURL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
 import Dashboard from './components/Dashboard';
 import ManualEntry from './components/ManualEntry';
 import './styles/App.css';
